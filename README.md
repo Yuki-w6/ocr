@@ -1,4 +1,5 @@
 # ocr
+ChatGPTより
 
 PythonでOCRを行う場合、pytesseractというライブラリを使用することが一般的です。これはGoogleが開発した無料のOCRエンジンであるTesseractをPythonから使うためのライブラリです。
 
