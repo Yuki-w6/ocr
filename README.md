@@ -1,22 +1,18 @@
-# ocr
-ChatGPTより
+# Mastering OpenCV with Python: Use NumPy, Scikit, TensorFlow, and Matplotlib to learn Advanced algorithms for Machine Learning through a set of Practical Projects (English Edition)
 
-PythonでOCRを行う場合、pytesseractというライブラリを使用することが一般的です。これはGoogleが開発した無料のOCRエンジンであるTesseractをPythonから使うためのライブラリです。
+## Pixel
+画像の最小単位。色と位置情報を含む。
 
-pytesseractとPIL（Python Imaging Library）をインストールします。これらは、Pythonで画像を操作するために必要なライブラリです。Python環境で以下のコマンドを実行してインストールします。
+## Imread()
+プログラム内で画像を扱うための関数。
 
+## Imshow
+画像を表示するためのコマンド。
+
+## トラブルシューティング
+- qt.qpa.plugin: Could not find the Qt platform plugin "offscreen" in ~
+
+QT_QPA_PLATFORMを指定することで解決。以下を実行した後に再度実行
 ```bash
-pip install pytesseract pillow
-
-```
-
-次に、Tesseract OCRエンジンをインストールする必要があります。これはシステムレベルのソフトウェアで、pytesseractがこれをバックエンドとして使用します。
-
-
-
-PDF形式からテキストを抽出するには、PDFを画像に変換し、その画像に対してOCRを行う方法が一般的です。Pythonでは、pdf2imageというライブラリを用いてPDFを画像に変換できます。
-
-```bash
-pip install pytesseract pillow pdf2image
-
+export QT_QPA_PLATFORM=xcb
 ```
