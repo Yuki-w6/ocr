@@ -1,13 +1,21 @@
-# Mastering OpenCV with Python: Use NumPy, Scikit, TensorFlow, and Matplotlib to learn Advanced algorithms for Machine Learning through a set of Practical Projects (English Edition)
-
 ## Pixel
 画像の最小単位。色と位置情報を含む。
 
-## Imread()
-プログラム内で画像を扱うための関数。
+```python
+img = cv2.imread(path)
+pixel = img[y, x]
+```
 
-## Imshow
+#### Imread()
+プログラム内で画像を扱うための関数。
+#### Imshow
 画像を表示するためのコマンド。
+
+## 範囲
+```python
+img = cv2.imread(path)
+roi = img[y:y+h, x:x+w]
+```
 
 ## トラブルシューティング
 - qt.qpa.plugin: Could not find the Qt platform plugin "offscreen" in ~
